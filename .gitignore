@@ -13,4 +13,3 @@ vite.config.ts.timestamp-*
 .prettierignore
 .prettierrc
 .vscode/
-README.md
