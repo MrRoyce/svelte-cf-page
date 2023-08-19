@@ -66,9 +66,13 @@
 {/if}
 
 <ul class="list">
-	{#each products as product}
+	{#each products as product, i (product.name)}
 		<li>
-			<span class="flex-auto"> <h3 class="h3">{product.name}</h3> </span>
+			<span class="flex-auto mb-10">
+				<h3 class="h3">{product.name}</h3>
+				<input type="checkbox" />
+				<div>{i}</div>
+			</span>
 		</li>
 	{/each}
 </ul>
