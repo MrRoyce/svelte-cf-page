@@ -1,5 +1,6 @@
 <script>
 	import GridTile from './../lib/GridTile.svelte';
+
 	let products = [
 		{
 			title: 'Cup',
@@ -18,8 +19,6 @@
 	}
 </script>
 
-<button on:click={updateCost} class="text-white bg-pink-500 p-2 my-4">Change Price</button>
 {#each products as product}
 	<GridTile {product} />
 {/each}
-<GridTile />
