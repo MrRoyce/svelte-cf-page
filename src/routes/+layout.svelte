@@ -13,8 +13,9 @@
 		autoModeWatcher,
 		Avatar,
 		Drawer,
-		DrawerSettings,
-		drawerStore
+		drawerStore,
+		Modal,
+		Toast
 	} from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
 
@@ -26,6 +27,9 @@
 <svelte:head
 	>{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}</svelte:head
 >
+
+<Toast position="tr" />
+<Modal />
 
 <Drawer><Navigation /></Drawer>
 <!-- App Shell -->
